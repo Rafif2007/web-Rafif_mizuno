@@ -1,0 +1,592 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #0d1b2a;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .logo span {
+  color: #4caf50;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .icons i {
+  color: white;
+  font-size: 18px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 27, 42, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.hero .text {
+  max-width: 50%;
+}
+
+.hero .text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero .text h1 span {
+  color: #4caf50;
+}
+
+.hero .text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero .text .cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero .text .cta a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero .text .cta .shop-now {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero .image img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 right;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #0d1b2a;
+  position: relative;
+  top: -20px  ;
+}
+
+.product-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  text-align: left;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-images img {
+  width: 100px;
+}
+
+.learn-more {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar kolom */
+  justify-content: center;
+}
+
+.row-cols-4 .col {
+  flex: 1 1 calc(25% - 20px); /* Membagi kolom menjadi empat bagian sama rata */
+  max-width: calc(25% - 20px);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.row-category {
+  flex-wrap: nowrap !important;
+}
+.category {
+  width: 300px;                                                                    
+  padding: right;
+}
+
+.category-descrisi {
+  font: bold;
+}
+
+.category-Learnmore {
+  color: green;
+}
+
+.container-men {
+  width: 300px;
+}
+.men-2 {
+  text-align: left;
+  font-size: 14;
+}
+
+.men-Seeproduct {
+    color: green;
+}
+
+.men-Seeproduct2 {
+    color: green;
+    padding: 5%;
+    padding-left: 7%;
+}
+
+.men-2 {
+    text-align: left;
+}
+
+.men-3 {
+    padding-left: 7%;
+}
+
+.men-4 {
+    padding-left: 15%;
+}
+
+.container-women {
+  padding: 20px;
+  padding-top: 20px;
+  position: absolute;
+  top:  0px ; /* Pindahkan ke atas */
+  left: 100%;
+  width: 100%;
+}
+
+.women-1 {
+  text-align: left;
+  font-size: 14;
+}
+
+.women-2 {
+  padding-left: 7%;
+
+}
+
+.women-3 {
+  padding-bottom: 15%;
+}
+
+.women-img-1 {
+  left: auto;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 92px;
+}   
+
+.icons {
+  display: flex;
+  gap: 10px;
+  float: right;
+  /* margin-right: 100px; */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+#IconsKu{
+  margin-right: 100px;
+}
+
+.icon i {
+  color: white;
+  font-size: 16px;
+  /* margin-right: 700%; */
+}
+
+.icon-prev {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* margin-right: 100px; */
+}
+
+.icon-next {
+  /* margin-left: -700%; */
+  background-color: #00ff00;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Menyusun gambar secara horizontal di tengah */
+  gap: 20px; /* Memberikan jarak antar gambar */
+  align-items: center; /* Menyusun gambar di tengah secara vertikal */
+  flex-wrap: wrap; /* Agar elemen tidak keluar dari container saat ukuran layar kecil */
+  margin-top: 40px;
+}
+
+.card-1 {
+  text-align: center;
+  width: 300px; /* Lebar gambar dan teks tetap konsisten */
+  margin-bottom: 20px; /* Jarak antara card */
+}
+
+.card-2 {
+  text-align: center;
+  width: 300px; /* Lebar gambar dan teks tetap konsisten */
+  margin-bottom: 20px; /* Jarak antara card */
+}
+
+.card-3 {
+  text-align: center;
+  width: 300px; /* Lebar gambar dan teks tetap konsisten */
+  margin-bottom: 20px; /* Jarak antara card */
+  margin-right: 0;
+}
+
+.car-4 {
+  text-align: center;
+  width: 300px; /* Lebar gambar dan teks tetap konsisten */
+  margin-bottom: 20px; /* Jarak antara card */
+} 
+
+.card-5 {
+  text-align: center;
+  width: 300px; /* Lebar gambar dan teks tetap konsisten */
+  margin-bottom: 20px; /* Jarak antara card */
+  margin-right: 0;
+}
+.card-1 img {
+  width: 150%; /* Gambar akan menyesuaikan dengan ukuran card */
+  height: 360px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  text-align: left;
+  margin-left: -80% !important;
+}
+
+.card-2 img {
+  width: 120%; /* Gambar akan menyesuaikan dengan ukuran card */
+  height: 360px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  text-align: right;
+}
+
+.card-3 img {
+  width: 150%; /* Gambar akan menyesuaikan dengan ukuran card */
+  height: 360px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  margin-right: -100% !important;
+}
+
+.card-4 img {
+  width: 130%; /* Gambar akan menyesuaikan dengan ukuran card */
+  height:500px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  text-align: left;
+  margin-left: -60%;
+}
+
+.card-5 img {
+  width: 200%; /* Gambar akan menyesuaikan dengan ukuran card */
+  height: 500px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  text-align: left;
+  margin-left: 24%;
+}
+.card-1 h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: -65% !important;
+}
+
+.card-2 h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.card-3 h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 30% 30%;
+
+}
+
+.card-4 h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: -60% !important;
+}
+
+.card-5 h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 30% 30%;
+}
+
+.card-1 p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: left;
+  margin-left: -65%;
+}
+
+.card-2 p{
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card-3 p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: left;
+  transform: translateX(71px);
+}
+
+.card-4 p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: left;
+  margin-left: -60%;
+}
+
+.card-5 p {
+  font-size: 1em;
+  margin: 10px 0;
+  text-align: left;
+  transform: translateX(71px);
+}
+
+.card-1 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color:green;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: -215%;
+}
+
+.card-2 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color:green;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: -90%;
+}
+
+.card-3 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color:green;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: -40%;
+}
+
+.card-4 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color:green;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: -62%;
+}
+
+.card-5 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color:green;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: -40%;
+}
+
+.men-Shop {
+  color: #00ff00;
+  text-align: left;
+}
+
+.container-ending {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.ending {
+  text-align: left;
+  padding: 20px;
+}
+.membership-banner {
+  background-color: #4caf50;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.membership-banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+.membership-banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.membership-banner .buttons {
+  display: flex;
+  gap: 10px;
+}
+.membership-banner .buttons button {
+  background-color: #ffffff;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.membership-banner .buttons button:hover {
+  background-color: #e0e0e0;
+}
+.membership-banner img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+.footer {
+  background-color:aqua;
+  padding: 40px 20px;
+}
+.footer .links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer .links div {
+  flex: 1;
+  padding: 0 10px;
+}
+.footer .links h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .links ul li {
+  margin-bottom: 5px;
+}
+.footer .links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .links ul li a:hover {
+  text-decoration: underline;
+}
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+}
+.footer .bottom .social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer .bottom .social-icons a:hover {
+  color: #4caf50;
+}
+.footer .bottom .country {
+  display: flex;
+  align-items: center;
+}
+.footer .bottom .country i {
+  margin-right: 5px;
+}
+.footer .bottom .legal {
+  display: flex;
+  gap: 10px;
+}
+.footer .bottom .legal a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .bottom .legal a:hover {
+  text-decoration: underline;
+}
